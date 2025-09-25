@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Non SM Entity",
+  "Type": "Screen",
+  "Id": "SBl6Wc5KHkuz2NJb4V-Y5w",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/SBl6Wc5KHkuz2NJb4V-Y5w",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/3QdZlp02W0KHSIdIp2FYdQ",
+  "Created": "2025-06-11T14:57:13.1970691Z",
+  "Updated": "2025-06-11T14:57:13.1970691Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

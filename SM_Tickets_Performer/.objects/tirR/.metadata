@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Non SM Entity",
+  "Type": "App",
+  "Id": "tirRxNXcy0y86RgRh7vlhA",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/tirRxNXcy0y86RgRh7vlhA",
+  "Created": "2025-06-11T14:57:13.1141636Z",
+  "Updated": "2025-06-11T14:57:13.1141636Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

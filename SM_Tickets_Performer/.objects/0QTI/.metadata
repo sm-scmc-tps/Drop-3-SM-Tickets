@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SM Tickets Ticket List Report",
+  "Type": "App",
+  "Id": "0QTIWNEcREy6s21ATvQFOQ",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/0QTIWNEcREy6s21ATvQFOQ",
+  "Created": "2025-06-05T02:40:32.7936791Z",
+  "Updated": "2025-06-05T02:40:32.7936791Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

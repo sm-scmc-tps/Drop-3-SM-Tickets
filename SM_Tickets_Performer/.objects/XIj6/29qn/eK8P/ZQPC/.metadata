@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Extract Table Data Branch Details",
+  "Type": "Element",
+  "Id": "ZQPCE45W9E2TxxhZxfx1aw",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/ZQPCE45W9E2TxxhZxfx1aw",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/eK8PAnhugkOH3gV38re-WA",
+  "Created": "2025-06-05T10:03:57.7803813Z",
+  "Updated": "2025-06-05T10:03:57.7803813Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

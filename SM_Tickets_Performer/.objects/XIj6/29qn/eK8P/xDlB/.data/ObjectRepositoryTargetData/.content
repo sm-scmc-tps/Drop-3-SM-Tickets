@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6xQmZfg9jEuUJq75OVpBKQ" Reference="7xqsePoZV0aqM1ya7rHyoQ/xDlBNeJy80OKhCns8QTjuw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="32e82dff-a47b-4a9d-ba72-8bf469fe2c60" DesignTimeRectangle="608, 494, 318, 20" DesignTimeScaleFactor="0.9375" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' name='event_id' parentid='wrapper' /&gt;" Guid="0e5689f9-6e0b-4126-9ebe-70762f7b155b" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Visible" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="32e82dff-a47b-4a9d-ba72-8bf469fe2c60" CvTextArea="415, 500, 142, 15" CvTextArgument="Select Specific Event:" CvType="Text" DesignTimeRectangle="417, 494, 188, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Select Specific Event:' tag='LABEL' type='' class='' check:innerText='Select Specific Event:' /&gt;" Guid="785a3117-61c5-4339-b65c-f42e519f9ce0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="851e714a5774b4e1b7e0547a10adf9d1.png" xmlns="">0wH8vVJ0LlEW4EYydv7CuDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

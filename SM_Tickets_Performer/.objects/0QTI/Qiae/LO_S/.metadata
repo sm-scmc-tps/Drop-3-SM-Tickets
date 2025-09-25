@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SM Tickets Ticket List Report",
+  "Type": "Screen",
+  "Id": "LO_Sja1Nr06IG6JhGfS6kA",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/LO_Sja1Nr06IG6JhGfS6kA",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/Qiae6jZDPEWkUTIWHFQMxA",
+  "Created": "2025-06-05T02:40:32.9085004Z",
+  "Updated": "2025-06-05T02:40:32.9085004Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

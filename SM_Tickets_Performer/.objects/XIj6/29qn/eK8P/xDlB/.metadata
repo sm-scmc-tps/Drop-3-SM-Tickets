@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Select Specific Event",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "xDlBNeJy80OKhCns8QTjuw",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/xDlBNeJy80OKhCns8QTjuw",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/eK8PAnhugkOH3gV38re-WA",
+  "Created": "2025-06-05T03:23:48.8290363Z",
+  "Updated": "2025-06-05T03:23:48.8290363Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

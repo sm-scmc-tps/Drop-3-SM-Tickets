@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Open SM Tickets Login Page(1)",
+  "Type": "Screen",
+  "Id": "HPyNSf8RM0mqS7GTQCWKiA",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/HPyNSf8RM0mqS7GTQCWKiA",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/29qn1f1KREW-rk6XICKYaw",
+  "Created": "2025-05-30T04:40:02.4447176Z",
+  "Updated": "2025-05-30T04:40:02.4447176Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
