@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MTfTHQAaEkGArQkHiZWiTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="96fbe642-a005-4cbe-94a7-20cbe1d6d841" CvTextArea="25, 281, 25, 10" CvType="AnyWordGroup" DesignTimeRectangle="22, 275, 99, 23" DesignTimeScaleFactor="0.9375" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='FIRST NAME LAST NAME PRICE CATEGORY PRICE TRANS ID TICKET ID SECTION ROW SEAT BRANCH TRANS DATE PAYMENT TYPE TICKET TYPE TICKET STATUS REMARKS DATE USED LAST ACCESSED TOKEN ID' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="8c6d79c7-8903-49e8-bdfb-b1af4bcd7d32" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="92798d0a632d10d6e1662620d3129e7b.png" xmlns="">08y9VqXHPOU2VqwctTGuW-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

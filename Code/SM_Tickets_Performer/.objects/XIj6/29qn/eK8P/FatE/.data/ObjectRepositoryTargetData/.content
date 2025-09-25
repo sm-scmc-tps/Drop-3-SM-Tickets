@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uCl8Jyy9TUSWhuYdoTBWzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="802afbee-7a8e-4d52-b502-d7d8fdcd4dc4" CvTextArea="22, 119, 63, 12" CvTextArgument="Date Range" CvType="Text" DesignTimeRectangle="23, 118, 62, 12" DesignTimeScaleFactor="0.9375" FuzzySelectorArgument="&lt;webctrl id='header' tag='TABLE' /&gt;&lt;webctrl type='' tag='B' class='' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Date Range &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Date Range' /&gt;" Guid="83b07e08-039b-4184-9fa3-cbcdb91e7af2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8e9a9ada609a9d191db129f8d7b4fa7e.png" xmlns="">0pMI76AQqKk-7HUooYxjfGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

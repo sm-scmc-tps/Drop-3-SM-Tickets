@@ -1,0 +1,171 @@
+{
+  "name": "SM_Tickets_Performer",
+  "projectId": "3aba6a17-c20e-426e-89f3-e233c22e1205",
+  "description": "SM_Tickets_Performer",
+  "main": "Main.xaml",
+  "dependencies": {
+    "BalaReva.Excel.Activities": "[2021.1.0]",
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.Mail.Activities": "[2.0.11]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.0.14]",
+    "UiPath.System.Activities": "[25.2.1]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]",
+    "uipathteam.subtitle.activities": "[1.2.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.6",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9db50fa8-5d06-4f78-8b86-667e31122eb5",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5721ad53-81a3-47b5-a481-64f6931db907",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "786f75f7-5b69-4f93-bc42-42573360ccf1",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "c790d38b-8dec-40ad-b370-75cf5d30d785",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9939783c-9636-467c-9c93-bcfa38ad7326",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "902e39fb-761d-4171-8368-b4fe2518bfb2",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d68e2107-e94f-4fd1-918a-fad88f9affb6",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_SMTicket_Downloading_And_Plotting_To_NonSM.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a291266d-4e59-4c7c-b411-9677706d2af5",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_SMTicket_Login_Nav_To_NonSM.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8ddc12ca-6cf1-4dd0-88bb-9736bde0ed89",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_SMTicket_Downloading_And_Plotting_To_SLCAndCN.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "33420ef2-4978-49eb-a323-cac30113a656",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_Sharepoint.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2a6d9162-8aa0-49ff-8eb5-667a167a5e7d",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\Test_NavigateReport.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4d3b951b-ff88-4667-87f3-4e1a0a2d305a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "SM Ticket\\TestCase_Generating_ticketList.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0351601b-1969-465f-a119-ee283027eb2f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "SM Ticket\\TestCase_GetData_TicketList.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "30a1d532-6d2c-4854-b940-07e40633aab1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "SM Ticket\\TestCase_MergeData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8dc838c7-6984-4d0c-8f5d-f8722831b960",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "SM Ticket\\TestCase_GetTicketList.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "01487d58-e8a4-4523-a536-636d34e7cbaa",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "mics",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "LNhErYFF3k6t5ddf74z2Ag",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/LNhErYFF3k6t5ddf74z2Ag",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/eK8PAnhugkOH3gV38re-WA",
+  "Created": "2025-06-11T14:41:44.5447541Z",
+  "Updated": "2025-06-11T14:41:44.5447541Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

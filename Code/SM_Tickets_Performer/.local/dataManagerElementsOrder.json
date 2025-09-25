@@ -1,0 +1,1749 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_DuplicateColumnNames.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ColArr&Sequence_1",
+        "ColCountDict&Sequence_1",
+        "Index&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dt_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_UnMergeCells.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_NonSMSummarySheet",
+        "in_WorkingFilePath",
+        "out_dt_Data",
+        "in_HeaderIndex"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "TransactionDate&StateMachine_1",
+        "dt_TransactionResults&StateMachine_1",
+        "DateYear&StateMachine_1",
+        "BusinessUnit&StateMachine_1",
+        "DateMonth&StateMachine_1",
+        "DateDay&StateMachine_1",
+        "Entity&StateMachine_1",
+        "Branch&StateMachine_1",
+        "BranchCode&StateMachine_1",
+        "Events&StateMachine_1",
+        "Retry&StateMachine_1",
+        "dt_ManualProcessPickleball&StateMachine_1",
+        "dt_CompleteReportPickleball&StateMachine_1",
+        "dt_ManualProcessSkyranch&StateMachine_1",
+        "dt_CompleteReportSkyranch&StateMachine_1",
+        "ShouldStop&Sequence_25",
+        "tempTable&State_3",
+        "RetryDate&Sequence_42"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DestinationURL&Sequence_29",
+        "PreviousEvents&Sequence_30",
+        "CurrentEvents&Sequence_30",
+        "MonthEvents&Sequence_31",
+        "dt_BranchDetails&Flowchart_1",
+        "dt_TableTitle&Flowchart_1",
+        "dt_BranchData&Flowchart_1",
+        "OutletCommisionGT&Flowchart_1",
+        "CoveredSalesGT&Flowchart_1",
+        "InternetChargeGT&Flowchart_1",
+        "NetAmountGT&Flowchart_1",
+        "Retry&Flowchart_1",
+        "isLogin&Flowchart_1",
+        "MonthCell&Flowchart_1",
+        "DestinationFolder&Flowchart_1",
+        "arr_Files&Flowchart_1",
+        "isAuditExist&Flowchart_1",
+        "dt_SM&Flowchart_1",
+        "TotalSalesGT&Flowchart_1",
+        "TicketSalesCell&Flowchart_1",
+        "dt_TicketList&Flowchart_1",
+        "out_MovedFile&Flowchart_1",
+        "TransactionDate&Flowchart_1",
+        "notFoundEvents&Flowchart_1",
+        "PreviousYearStartDate&Flowchart_1",
+        "PreviousYearEndDate&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Events_PY_Second",
+        "in_Events_PY_First",
+        "in_Events_CY_Second",
+        "in_Events_CY_First",
+        "io_dt_CompleteProcessSkyranch",
+        "io_dt_CompleteProcessPickleball",
+        "io_dt_ManualProcessSkyranch",
+        "io_dt_ManualProcessPickleball",
+        "out_ReportStatus",
+        "in_TransactionItem",
+        "in_TransactionDate",
+        "in_Events",
+        "in_Retry",
+        "in_BusinessUnit",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Test_SMTicket_Downloading_And_Plotting_To_NonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ValidationZeroValue&Sequence_1",
+        "Config&Sequence_1",
+        "dt_BranchDetails&Sequence_1",
+        "dt_TableTitle&Sequence_1",
+        "dt_BranchData&Sequence_1",
+        "dt_NonSM&Sequence_1",
+        "OutletCommisionGT&Sequence_1",
+        "CoveredSalesGT&Sequence_1",
+        "InternetChargeGT&Sequence_1",
+        "NetAmountGT&Sequence_1",
+        "NonSMWorkingFilePath&Sequence_3",
+        "SMWorkingFilePath&Sequence_3",
+        "MonthCell&Sequence_3",
+        "TotalSummaryCell&Sequence_3",
+        "InternetSummaryCell&Sequence_3",
+        "ValidationMonthCell&Sequence_3",
+        "ValidationCoveredSalesCell&Sequence_3",
+        "ValidationInternetSalesCell&Sequence_3",
+        "ValidationNetAmountCell&Sequence_3",
+        "ValidationZeroCell&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_CellNonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InternetColLetter&Sequence_1",
+        "TotalComColLetter&Sequence_1",
+        "dt_Data&Sequence_1",
+        "MonthIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Branches",
+        "out_MonthCell",
+        "out_TotalSummaryCell",
+        "out_InternetSummaryCell",
+        "in_TransactionDate",
+        "out_ValidationZeroCell",
+        "out_ValidationNetAmountCell",
+        "out_ValidationInternetSalesCell",
+        "out_ValidationCoveredSalesCell",
+        "out_ValidationMonthCell",
+        "in_WorkingFilePath",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Test_SMTicket_Login_Nav_To_NonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionDate&Sequence_7",
+        "dt_BranchData&Sequence_8",
+        "dt_TableTitle&Sequence_8",
+        "dt_BranchDetails&Sequence_8",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Get_WorkingFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arr_Files&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_InputWorkingFileFolder",
+        "out_SMWorkingFilePath",
+        "out_NonSMWorkingFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetData_TicketList_.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_BranchDetails&Sequence_7",
+        "IsTicketListReportExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_BranchDetails",
+        "out_dt_TableTitle",
+        "out_dt_BranchData",
+        "in_Config",
+        "in_TransactionItem",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_RenameExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dstPath&Sequence_1",
+        "srcPath&Sequence_1",
+        "newFileName&Sequence_1",
+        "BranchClean&Sequence_1",
+        "branchRaw&Sequence_1",
+        "prefix&Sequence_1",
+        "eventUpper&Sequence_1",
+        "FormatDate&Sequence_1",
+        "PreviousDate&Sequence_1",
+        "TicketList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Events",
+        "in_Config",
+        "in_TransactionDate",
+        "in_dt_TableTitle",
+        "out_dt_TicketList",
+        "in_dt_BranchDetails",
+        "in_dt_BranchData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetValueSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "RowIndex&Sequence_1",
+        "ColIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_TotalSalesGT",
+        "in_TotalSalesColName",
+        "in_PromoterTotalRowName",
+        "in_PromoterColName",
+        "in_dt_BranchData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Plot_NonSM_Entities.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_dt_Data",
+        "in_EntitiesSheetName",
+        "in_WorkingFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_ColLetterNonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TempIndex&Sequence_1",
+        "MonthIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_InternetColLetter",
+        "out_TotalComColLetter",
+        "in_Month",
+        "in_dt_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_Cell_SummaryNonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BranchIndex&Sequence_1",
+        "EastwoodIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_InternetCell",
+        "out_TotalCell",
+        "in_Branches",
+        "in_InternetColLetter",
+        "in_TotalComColLetter",
+        "in_HeaderIndex",
+        "out_MonthCell",
+        "in_dt_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_2",
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Plot_NonSM_Summary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_InternetChargeGT",
+        "in_MonthCell",
+        "in_InternetSummaryCell",
+        "in_TotalSummaryCell",
+        "in_OutletCommissionGT",
+        "in_NonSMSummayrSheet",
+        "in_WorkingfilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isLogoutExist&Sequence_2",
+        "isForceLogoutExist&Sequence_4",
+        "Password&Sequence_2",
+        "Username&Sequence_2",
+        "isChangePasswordExist&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_isLogin",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_Cell_NonSMValidation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BranchIndex&Sequence_1",
+        "FinalBranchIndex&Sequence_1",
+        "FinalMonthIndex&Sequence_1",
+        "IndexOfMonth&Sequence_1",
+        "dt_NonSMValidation&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_ValidationZeroCell",
+        "out_ValidationNetAmountCell",
+        "out_ValidationInternetSalesCell",
+        "out_ValidationCoveredSalesCell",
+        "out_ValidationMonthCell",
+        "in_Config",
+        "in_Branch",
+        "in_Month",
+        "in_NonSMValidationSheet",
+        "in_WorkingFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Plot_NonSM_Validation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_NonSMValidationSheet",
+        "in_ValidationMonthCell",
+        "in_ValidationCoveredSalesCell",
+        "in_ValidationInternetSalesCell",
+        "in_ValidationNetAmountCell",
+        "in_ValidationZeroCell",
+        "in_CoveredSalesGT",
+        "in_InternetSalesGT",
+        "in_NetAmountGT",
+        "out_ValidationZeroValue",
+        "in_TransactionDate",
+        "in_WorkingfilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionDate&Sequence_1",
+        "Events&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dt_CompleteProcessSkyranch",
+        "io_dt_CompleteProcessPickleball",
+        "io_dt_ManualProcessSkyranch",
+        "io_dt_ManualProcessPickleball",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Navigate_To_Reports_SLC_and_CN.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Generating_Report_SLC_and_CN.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LastDayOfTheMonth&Sequence_1",
+        "FirstDayOfTheMonth&Sequence_1",
+        "currentYear&Sequence_1",
+        "startDate&Sequence_1",
+        "endDate&Sequence_1",
+        "dynamicFileName&Sequence_1",
+        "branchName&Sequence_1",
+        "excelFilePath&Sequence_1",
+        "extractedData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_Config",
+        "out_isAuditTrailReportExist",
+        "in_Branches"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailLoginError.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_Entity"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TransactionResults&Sequence_2",
+        "DateYear&Sequence_2",
+        "DateDay&Sequence_2",
+        "DateMonth&Sequence_2",
+        "BusinessUnit&Sequence_2",
+        "Config&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_dt_CompleteReportPickleball",
+        "in_dt_CompleteReportSkyranch",
+        "in_dt_ManualProcessPickleball",
+        "in_dt_ManualProcessSkyranch",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_UploadFiles.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "LocalRef&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Timeout",
+        "in_Config",
+        "in_FileList",
+        "in_DestinationFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailNonSM504.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_Entity"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_CheckFolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsFound&Sequence_1",
+        "arr_Folder&Sequence_1",
+        "folder&Sequence_8",
+        "FolderGet&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_MainSharepointURL",
+        "in_SearchFolder",
+        "in_Config",
+        "out_SearchedFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_CreateFolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_BusinessUnit&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_MainSharepointURL",
+        "in_SubFolder1",
+        "in_SubFolder2",
+        "in_SubFolder3",
+        "in_SubFolder4",
+        "in_SubFolder5",
+        "in_SubFolder6",
+        "in_SubFolder7",
+        "in_SubFolder8",
+        "in_SubFolder9",
+        "in_SubFolder10",
+        "io_DestinationFolder",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_CheckSubFolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arr_Folders&Sequence_1",
+        "arr_Folder&Sequence_7",
+        "folder&Sequence_7",
+        "IsFound&Sequence_7",
+        "FolderGet&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_SubFolder",
+        "in_SearchFolder",
+        "out_SearchedFolder",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Test_SMTicket_Downloading_And_Plotting_To_SLCAndCN.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TicketSalesCell&Sequence_3",
+        "MonthCell&Sequence_3",
+        "SMWorkingFilePath&Sequence_3",
+        "NonSMWorkingFilePath&Sequence_3",
+        "dt_SM&Sequence_1",
+        "TotalSalesGT&Sequence_1",
+        "dt_BranchData&Sequence_3",
+        "dt_TableTitle&Sequence_3",
+        "dt_BranchDetails&Sequence_3",
+        "TransactionDate&Sequence_3",
+        "isAuditExist&Sequence_3",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Navigate_To_Reports_TicketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_Generating_Report_TicketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "reportDate&Sequence_1",
+        "LastDayOfTheMonth&Sequence_1",
+        "dt_BranchDetails&Sequence_2",
+        "dt_TableTitle&Sequence_2",
+        "dt_BranchData&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Events_Second",
+        "in_Events_First",
+        "out_notFoundEvents",
+        "in_TransactionDate",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_CompleteReportPickleball",
+        "out_dt_CompleteReportSkyranch",
+        "out_dt_ManualProcessPickleball",
+        "out_dt_ManualProcessSkyranch",
+        "TransactionDate",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetData - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsCommisionReportExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_BranchDetails",
+        "out_dt_TableTitle",
+        "out_dt_BranchData",
+        "in_Config",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_GetLocalFiles.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_LocalFilePath",
+        "out_arr_Files"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetDataSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsCommisionReportExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_BranchDetails",
+        "out_dt_TableTitle",
+        "out_dt_BranchData",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetValueNonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "RowIndex&Sequence_1",
+        "ColIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dt_BranchData",
+        "in_GrandTotalValueName",
+        "in_GrandTotalColName",
+        "in_OutletCommisionColName",
+        "in_InternetChargeColName",
+        "in_CoveredSalesColName",
+        "in_NetAmountColName",
+        "out_OutletCommisionGT",
+        "out_CoveredSalesGT",
+        "out_InternetChargeGT",
+        "out_NetAmountGT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Plot_SM_Entities.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_WorkingFilePath",
+        "in_EntitiesSheetName",
+        "in_dt_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_CellSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TicketSalesColLetter&Sequence_1",
+        "MonthIndex&Sequence_1",
+        "dt_Data&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_TicketSalesCell",
+        "in_SMSummarySheet",
+        "in_Config",
+        "in_WorkingFilePath",
+        "in_Branches",
+        "out_MonthCell",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_ColLetterSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MonthIndex&Sequence_1",
+        "TempIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_TicketSalesColLetter",
+        "in_dt_Data",
+        "in_Month"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Get_Cell_SummarySM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BranchIndex&Sequence_1",
+        "EastwoodIndex&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TicketSalesColLetter",
+        "out_TicketSalesCell",
+        "in_dt_Data",
+        "out_MonthCell",
+        "in_HeaderIndex",
+        "in_Branches"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel/Excel_Plot_SM_Summary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_SMSummayrSheet",
+        "in_TicketSalesCell",
+        "in_TicketSalesGT",
+        "in_WorkingfilePath",
+        "in_MonthCell",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailSLC.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1",
+        "File&Sequence_7",
+        "FolderList&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_Entity",
+        "in_Timeout",
+        "in_Config",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailCN.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1",
+        "File&Sequence_7",
+        "FolderList&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_Entity",
+        "in_Config",
+        "in_Timeout",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Local_DeleteFiles.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arr_Files&Sequence_1",
+        "LocalRef&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folderpath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Common/Common_GetTransactionDate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailException.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_Entity",
+        "in_Config",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_Download_Working_File.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "file&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Timeout",
+        "in_Config",
+        "in_Sharepoint_WorkingFile",
+        "in_LocalFolder_WorkingFile"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sharepoint/Sharepoint_LocalDocsRename.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ArrayFiles&Sequence_1",
+        "CurrentYear&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ProcessTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionDate&Sequence_2",
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "TransactionNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/WorkflowTestCaseTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&Sequence_3",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Test_Sharepoint.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionDate&Sequence_3",
+        "DestinationFolder&Sequence_3",
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_GetData_TicketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TemplateBranchData&Sequence_1",
+        "dataexists&Sequence_2",
+        "IsTicketListReportExist&Sequence_1",
+        "Exists&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_BranchDetails",
+        "out_dt_TableTitle",
+        "out_dt_BranchData",
+        "in_Config",
+        "in_TransactionItem",
+        "in_TransactionDate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/TestCase_Generating_ticketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/TestCase_GetData_TicketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_config&Sequence_1",
+        "in_TransactionDate&Sequence_3",
+        "in_TransactionItem&Sequence_3",
+        "dt_BranchData&Sequence_3",
+        "dt_TableTitle&Sequence_3",
+        "dt_BranchDetails&Sequence_3",
+        "branchDeatild&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/GetTransactionDataTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionNumber&Sequence_1",
+        "TransactionItem&Sequence_1",
+        "VerificationOutput&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/InitAllApplicationsTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/InitAllSettingsTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/MainTestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StatusFileName&Sequence_1",
+        "ExpectedDataFileName&Sequence_1",
+        "dt_ResultsData&Sequence_4",
+        "dt_ExpectedData&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTransaction_orig.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PreviousYearEndDate&Flowchart_1",
+        "PreviousYearStartDate&Flowchart_1",
+        "dt_BranchDetails&Flowchart_1",
+        "dt_TableTitle&Flowchart_1",
+        "dt_BranchData&Flowchart_1",
+        "OutletCommisionGT&Flowchart_1",
+        "CoveredSalesGT&Flowchart_1",
+        "InternetChargeGT&Flowchart_1",
+        "NetAmountGT&Flowchart_1",
+        "Retry&Flowchart_1",
+        "isLogin&Flowchart_1",
+        "MonthCell&Flowchart_1",
+        "DestinationFolder&Flowchart_1",
+        "arr_Files&Flowchart_1",
+        "isAuditExist&Flowchart_1",
+        "dt_SM&Flowchart_1",
+        "TotalSalesGT&Flowchart_1",
+        "TicketSalesCell&Flowchart_1",
+        "dt_TicketList&Flowchart_1",
+        "out_MovedFile&Flowchart_1",
+        "TransactionDate&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_TransactionResults",
+        "in_TransactionItem",
+        "in_Config",
+        "in_TransactionDate",
+        "in_Events"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Archived/Test_SMTicket_Downloading_And_Plotting_To_SLCAndCN.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "dt_SM&Sequence_1",
+        "TotalSalesGT&Sequence_1",
+        "isAuditExist&Sequence_3",
+        "TransactionDate&Sequence_3",
+        "dt_BranchDetails&Sequence_3",
+        "dt_TableTitle&Sequence_3",
+        "dt_BranchData&Sequence_3",
+        "NonSMWorkingFilePath&Sequence_3",
+        "SMWorkingFilePath&Sequence_3",
+        "MonthCell&Sequence_3",
+        "TicketSalesCell&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessTransaction - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_NonSM&Flowchart_1",
+        "dt_BranchDetails&Flowchart_1",
+        "dt_TableTitle&Flowchart_1",
+        "dt_BranchData&Flowchart_1",
+        "OutletCommisionGT&Flowchart_1",
+        "CoveredSalesGT&Flowchart_1",
+        "InternetChargeGT&Flowchart_1",
+        "NetAmountGT&Flowchart_1",
+        "Retry&Flowchart_1",
+        "isLogin&Flowchart_1",
+        "NonSMWorkingFilePath&Flowchart_1",
+        "SMWorkingFilePath&Flowchart_1",
+        "MonthCell&Flowchart_1",
+        "TotalSummaryCell&Flowchart_1",
+        "InternetSummaryCell&Flowchart_1",
+        "ValidationMonthCell&Flowchart_1",
+        "ValidationCoveredSalesCell&Flowchart_1",
+        "ValidationInternetSalesCell&Flowchart_1",
+        "ValidationNetAmountCell&Flowchart_1",
+        "ValidationZeroCell&Flowchart_1",
+        "ValidationZeroValue&Flowchart_1",
+        "DestinationFolder&Flowchart_1",
+        "arr_Files&Flowchart_1",
+        "isAuditExist&Flowchart_1",
+        "dt_SM&Flowchart_1",
+        "TotalSalesGT&Flowchart_1",
+        "TicketSalesCell&Flowchart_1",
+        "TransactionDate&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Generic_MoveFilesFromDownloads.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CurrentDownloadedFile&Sequence_1",
+        "isFileExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_MovedFile",
+        "in_MovedFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Generic_RenameDownloadedFIle.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isFileExist&Sequence_1",
+        "ReportFileName_Format&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BranchCode",
+        "in_Events",
+        "in_BusinessUnit",
+        "out_MovedFile",
+        "in_DateYear",
+        "in_DateDay",
+        "in_DateMonth",
+        "in_Branch",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/TestCase_MergeData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TicketList&Sequence_3",
+        "in_Config&Sequence_2",
+        "dt_BranchDetails&Sequence_5",
+        "dt_TableTitle&Sequence_5",
+        "dt_BranchData&Sequence_5",
+        "in_config&Sequence_5",
+        "in_TransactionItem&Sequence_5",
+        "in_TransactionDate&Sequence_5",
+        "dt_BranchDetails&Sequence_3",
+        "dt_BranchTitle&Sequence_3",
+        "dt_BranchData&Sequence_3",
+        "dt_NonSM&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_MergeData_.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TicketList&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dt_BranchDetails",
+        "in_dt_BranchData",
+        "out_dt_TicketList",
+        "in_dt_TableTitle"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/TestCase_GetTicketList.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_TicketList&Sequence_4",
+        "in_TransactionDate&Sequence_1",
+        "in_TransactionItem&Sequence_1",
+        "in_Config&Sequence_1",
+        "dt_BranchData&Sequence_1",
+        "dt_TableTitle&Sequence_1",
+        "dt_BranchDetails&Sequence_1",
+        "Config&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_MergeData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TicketList&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ExcelFileName",
+        "out_dt_TicketList",
+        "in_dt_BranchDetails",
+        "in_dt_BranchTitle",
+        "in_dt_BranchData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailGeneric.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Branch",
+        "in_BusinessUnit",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailLoginError.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Report",
+        "in_Branch",
+        "in_Config",
+        "in_BusinessUnit",
+        "in_DateMonth",
+        "in_DateDay",
+        "in_DateYear"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Common/Generic_RenameDownloadedFIle.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isFileExist&Sequence_1",
+        "ReportFileName_Format&Sequence_1",
+        "NewFileName&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_MovedFile",
+        "in_DateYear",
+        "in_DateDay",
+        "in_DateMonth",
+        "in_Branch",
+        "in_Config",
+        "in_BusinessUnit",
+        "in_BranchCode",
+        "in_Entity"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_SendEmailLoginError_.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Subject",
+        "in_EmailFilePath",
+        "in_EmailSheet",
+        "in_EmailRange",
+        "in_BusinessUnit",
+        "in_DateDay",
+        "in_DateMonth",
+        "in_DateYear"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LogTransactionResult.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_Events",
+        "in_BranchCode",
+        "in_Branch",
+        "in_Entity",
+        "in_Retry",
+        "in_BusinessUnit",
+        "in_Report",
+        "io_TransactionResults",
+        "in_ReportLink",
+        "in_Status"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook_EmailFinalSummary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "businessUnitFromReport&Sequence_1",
+        "dt_SkyranchResults&Sequence_1",
+        "dt_PickleballResults&Sequence_1",
+        "str_Subject&Sequence_1",
+        "table&Sequence_1",
+        "str_EmailBody&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DateMonth",
+        "in_DateYear",
+        "in_DateDay",
+        "in_BusinessUnit",
+        "in_Config",
+        "in_TransactionResults"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_1",
+        "ScreenshotFileInfo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_SystemException",
+        "in_QueueRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_ConsolidateVoucherReport.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DataTableRowCount&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessUnit",
+        "in_Branch",
+        "in_DealID",
+        "in_ValidityEnd",
+        "in_CountValidatedVouchers",
+        "in_QueueTransactionDate",
+        "io_dt_Skyranch",
+        "in_ValidityStart",
+        "io_dt_Bowling",
+        "io_dt_Skating",
+        "io_dt_UndefinedBusinessUnit"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Common/Generic_MoveFilesFromDownloads.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CurrentDownloadedFile&Sequence_1",
+        "isFileExist&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OutputFolder",
+        "out_MovedFile",
+        "in_MovedFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Common/Generic_RenameDownloadedFIle - PreviousYear.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isFileExist&Sequence_1",
+        "ReportFileName_Format&Sequence_1",
+        "NewFileName&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_MovedFile",
+        "in_DateYear",
+        "in_DateDay",
+        "in_DateMonth",
+        "in_Branch",
+        "in_Config",
+        "in_BusinessUnit",
+        "in_BranchCode",
+        "in_Entity"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailReprocessSummary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_EmailBody&Sequence_1",
+        "table&Sequence_1",
+        "str_Subject&Sequence_1",
+        "dt_PickleballResults&Sequence_1",
+        "dt_SkyranchResults&Sequence_1",
+        "businessUnitFromReport&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionResults",
+        "in_Config",
+        "in_BusinessUnit",
+        "in_DateMonth",
+        "in_DateDay",
+        "in_DateYear"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailFinalSummary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_EmailBody&Sequence_1",
+        "table&Sequence_1",
+        "str_Subject&Sequence_1",
+        "dt_PickleballResults&Sequence_1",
+        "dt_SkyranchResults&Sequence_1",
+        "businessUnitFromReport&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionResults",
+        "in_Config",
+        "in_BusinessUnit",
+        "in_DateMonth",
+        "in_DateDay",
+        "in_DateYear"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SM Ticket/SM_Ticket_CheckRetry.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PostponeDate&Sequence_11",
+        "test&Sequence_16",
+        "MonthEvents&Sequence_17",
+        "CurrentEvents&Sequence_14",
+        "PreviousEvents&Sequence_14",
+        "MonthEvents&Sequence_16",
+        "CurrentEvents&Sequence_15",
+        "PreviousEvents&Sequence_15"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDateMonthDate",
+        "in_TransactionDateCurrentYear",
+        "in_TransactionDatePreviousYear",
+        "io_dt_CompleteReportSkyranch",
+        "io_dt_CompleteReportPickleball",
+        "io_dt_ManualProcessSkyranch",
+        "io_dt_ManualProcessPickleball",
+        "in_Entity",
+        "in_TransactionDate",
+        "in_Events",
+        "in_Date",
+        "in_BusinessUnit",
+        "in_Retry",
+        "in_Branch",
+        "in_BranchCode",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailFailedReportSkyranch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_dt_FailedReports"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailManualProcessPickleball.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_Config",
+        "in_dt_ManualProcess"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailCompleteSkyranch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_dt_CompleteReports",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailFailedReportPickleball.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_dt_FailedReports"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailManualProcessSkyranch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_Config",
+        "in_dt_ManualProcess"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/Outlook_EmailCompletePickleball.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "table&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionDate",
+        "in_dt_CompleteReports",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Archived/ProcessTransaction - Copy.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_BranchDetails&Flowchart_1",
+        "dt_TableTitle&Flowchart_1",
+        "dt_BranchData&Flowchart_1",
+        "OutletCommisionGT&Flowchart_1",
+        "CoveredSalesGT&Flowchart_1",
+        "InternetChargeGT&Flowchart_1",
+        "NetAmountGT&Flowchart_1",
+        "Retry&Flowchart_1",
+        "isLogin&Flowchart_1",
+        "NonSMWorkingFilePath&Flowchart_1",
+        "SMWorkingFilePath&Flowchart_1",
+        "MonthCell&Flowchart_1",
+        "TotalSummaryCell&Flowchart_1",
+        "InternetSummaryCell&Flowchart_1",
+        "ValidationMonthCell&Flowchart_1",
+        "ValidationCoveredSalesCell&Flowchart_1",
+        "ValidationInternetSalesCell&Flowchart_1",
+        "ValidationNetAmountCell&Flowchart_1",
+        "ValidationZeroCell&Flowchart_1",
+        "ValidationZeroValue&Flowchart_1",
+        "DestinationFolder&Flowchart_1",
+        "arr_Files&Flowchart_1",
+        "isAuditExist&Flowchart_1",
+        "dt_SM&Flowchart_1",
+        "TotalSalesGT&Flowchart_1",
+        "TicketSalesCell&Flowchart_1",
+        "dt_TicketList&Flowchart_1",
+        "out_MovedFile&Flowchart_1",
+        "TransactionDate&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "in_TransactionDate",
+        "in_Events"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Archived/Test_SMTicket_Downloading_And_Plotting_To_NonSM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "dt_BranchDetails&Sequence_1",
+        "dt_TableTitle&Sequence_1",
+        "dt_BranchData&Sequence_1",
+        "dt_NonSM&Sequence_1",
+        "OutletCommisionGT&Sequence_1",
+        "CoveredSalesGT&Sequence_1",
+        "InternetChargeGT&Sequence_1",
+        "NetAmountGT&Sequence_1",
+        "ValidationZeroValue&Sequence_1",
+        "NonSMWorkingFilePath&Sequence_3",
+        "SMWorkingFilePath&Sequence_3",
+        "MonthCell&Sequence_3",
+        "TotalSummaryCell&Sequence_3",
+        "InternetSummaryCell&Sequence_3",
+        "ValidationMonthCell&Sequence_3",
+        "ValidationCoveredSalesCell&Sequence_3",
+        "ValidationInternetSalesCell&Sequence_3",
+        "ValidationNetAmountCell&Sequence_3",
+        "ValidationZeroCell&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TestCheckRetry.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PostponeDate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sandbox.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

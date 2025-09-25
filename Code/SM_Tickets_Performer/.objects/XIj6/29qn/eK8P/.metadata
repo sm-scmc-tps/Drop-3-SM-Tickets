@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge SM Tickets - Ticket List",
+  "Type": "Screen",
+  "Id": "eK8PAnhugkOH3gV38re-WA",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/eK8PAnhugkOH3gV38re-WA",
+  "ParentRef": "7xqsePoZV0aqM1ya7rHyoQ/29qn1f1KREW-rk6XICKYaw",
+  "Created": "2025-06-05T03:23:21.7935277Z",
+  "Updated": "2025-06-05T03:23:21.7935277Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

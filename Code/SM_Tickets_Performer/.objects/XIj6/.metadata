@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Open SM Tickets Login Page",
+  "Type": "App",
+  "Id": "XIj69moC6E2Sys80FCgngA",
+  "Reference": "7xqsePoZV0aqM1ya7rHyoQ/XIj69moC6E2Sys80FCgngA",
+  "Created": "2025-05-30T04:11:26.1615339Z",
+  "Updated": "2025-05-30T04:11:26.1615339Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
