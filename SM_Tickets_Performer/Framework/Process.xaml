@@ -108,7 +108,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1995,1649" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="744.0000000000001,1661.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Events" />
       <Variable x:TypeArguments="x:String" Name="TransactionDate" />
@@ -119,8 +119,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:MultipleAssign sap2010:Annotation.AnnotationText="Extracts the &quot;Events&quot; and &quot;Date&quot; values from the transaction item and assigns them to local variables." DisplayName="Extract Events and Transaction Date" sap:VirtualizedContainerService.HintSize="479,221" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="478.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:MultipleAssign sap2010:Annotation.AnnotationText="Extracts the &quot;Events&quot; and &quot;Date&quot; values from the transaction item and assigns them to local variables." DisplayName="Extract Events and Transaction Date" sap:VirtualizedContainerService.HintSize="478.4,224" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -147,22 +147,22 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Event: &quot; + Events + Environment.NewLine + &quot;Date: &quot; + TransactionDate.ToString]" />
-    <TryCatch sap2010:Annotation.AnnotationText="Attempts to invoke the main transaction workflow. If it fails, falls back to sending a generic email notification via Outlook." DisplayName="Process Transaction and Handle Email Fallback" sap:VirtualizedContainerService.HintSize="479,987" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Event: &quot; + Events + Environment.NewLine + &quot;Date: &quot; + TransactionDate.ToString]" />
+    <TryCatch sap2010:Annotation.AnnotationText="Attempts to invoke the main transaction workflow. If it fails, falls back to sending a generic email notification via Outlook." DisplayName="Process Transaction and Handle Email Fallback" sap:VirtualizedContainerService.HintSize="478.4,989.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="Processes the transaction using the main workflow logic." DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,259" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap2010:Annotation.AnnotationText="Processes the transaction using the main workflow logic." DisplayName="Try" sap:VirtualizedContainerService.HintSize="416,258.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessTransaction - Invoke Workflow File (ProcessTransaction.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessTransaction.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessTransaction - Invoke Workflow File (ProcessTransaction.xaml)" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessTransaction.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -179,6 +179,7 @@
               <InArgument x:TypeArguments="x:String" x:Key="in_Events_CY_Second">[String.Empty]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_Events_PY_First">[String.Empty]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_Events_PY_Second">[String.Empty]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Events_CY_Third">[String.Empty]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>
@@ -189,14 +190,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap2010:Annotation.AnnotationText="Handles exceptions by sending a generic email alert using Outlook." DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,432" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap2010:Annotation.AnnotationText="Handles exceptions by sending a generic email alert using Outlook." DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,433.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error Encountered: &quot; + exception.Message]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error Encountered: &quot; + exception.Message]" />
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Outlook_EmailGeneric - Invoke Workflow File (Outlook\Outlook_EmailGeneric.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Outlook\Outlook_EmailGeneric.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>

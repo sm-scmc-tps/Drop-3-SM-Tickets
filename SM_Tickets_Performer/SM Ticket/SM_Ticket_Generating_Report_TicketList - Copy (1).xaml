@@ -1,15 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Generating_Report_Non_SM" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usa="clr-namespace:UiPathTeam.Subtitle.Activities;assembly=SubtitleActivity" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Generating_Report_Non_SM" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usa="clr-namespace:UiPathTeam.Subtitle.Activities;assembly=SubtitleActivity" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_TransactionDate" Type="InArgument(s:DateTime)" />
     <x:Property Name="out_notFoundEvents" Type="OutArgument(x:Boolean)" />
     <x:Property Name="in_Events_First" Type="InArgument(x:String)" />
     <x:Property Name="in_Events_Second" Type="InArgument(x:String)" />
-    <x:Property Name="in_Events_Third" Type="InArgument(x:String)" />
   </x:Members>
-  <this:Generating_Report_Non_SM.in_Events_Third>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Generating_Report_Non_SM.in_Events_Third>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
@@ -132,7 +128,7 @@
       <AssemblyReference>SubtitleActivity</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Generating_Report_Non_SM" sap:VirtualizedContainerService.HintSize="744.0000000000001,6487.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Generating_Report_Non_SM" sap:VirtualizedContainerService.HintSize="1995,5142" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="reportDate" />
       <Variable x:TypeArguments="s:DateTime" Name="LastDayOfTheMonth" />
@@ -142,36 +138,28 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="Log mesage the starting of the execution" DisplayName="Log Message SM_Ticket_Generating_Report Started" sap:VirtualizedContainerService.HintSize="606.4,100.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;SM_Ticket_Generating_Report_TicketList Starting ....&quot;]">
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Log mesage the starting of the execution" DisplayName="Log Message SM_Ticket_Generating_Report Started" sap:VirtualizedContainerService.HintSize="574,204" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;SM_Ticket_Generating_Report_TicketList Starting ....&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Assign sap:VirtualizedContainerService.HintSize="606.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="574,114" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:DateTime">[reportDate]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="s:DateTime">[DateTime.Now.AddDays(-1)]</InArgument>
       </Assign.Value>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Generation of report for SM Tickets Ticket List" AttachMode="ByInstance" CloseMode="Never" DisplayName="SM Tickets Ticket List Report" sap:VirtualizedContainerService.HintSize="606.4,6109.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Generation of report for SM Tickets Ticket List" AttachMode="ByInstance" CloseMode="Never" DisplayName="SM Tickets Ticket List Report" sap:VirtualizedContainerService.HintSize="574,4606" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,5829.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,4326" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dt_BranchDetails" />
               <Variable x:TypeArguments="sd:DataTable" Name="dt_TableTitle" />
@@ -182,7 +170,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="539.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="506,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,368.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -227,7 +215,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Input Date To As Of" ClickBeforeMode="Single" DisplayName="Set Date Range To" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="539.2,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Text="[in_TransactionDate.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Input Date To As Of" ClickBeforeMode="Single" DisplayName="Set Date Range To" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="506,317" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Text="[in_TransactionDate.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="eaa22d64-6b99-4e5c-9b1a-dc419f12d30a" CvElementArea="606, 431, 335, 29" CvType="InputBox" DesignTimeRectangle="608, 432, 332, 25" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='date_to' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="6f54a9e7-6584-485b-a283-8e2e09e6f44b" InformativeScreenshot="9e1858ca1e423f84b3e5398d86a8a238.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -255,7 +243,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="539.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="506,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="463105a7-3fde-4297-bf2c-478302418309" ContentHash="foYq6uKHZ06F5p6rAmyoaA" CvElementArea="606, 492, 321, 23" CvType="InputBox" DesignTimeRectangle="608, 494, 318, 20" DesignTimeScaleFactor="0.9375" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="8e7ec8ce-c355-4dd1-9b58-3c8504a1992c" InformativeScreenshot="bf4a9da7ba927fd7bb3b7a41e1c83157.png" Reference="7xqsePoZV0aqM1ya7rHyoQ/7ibKHKB_sUWBFyyYxcziHA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -276,18 +264,18 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="539.2,5168" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="506,3665" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <TryCatch.Try>
-                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="537.6,1119.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="504,1115" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,176" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Selecting First Format Events: &quot; + in_Events_First]" />
-                  <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="504,112.8" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_1" Message="[&quot;Selecting First Format Events: &quot; + in_Events_First]" TextColor="White" />
-                  <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="504,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[in_Events_First]" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Timeout="15" Version="V4">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Selecting First Format Events: &quot; + in_Events_First]" />
+                  <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="470,112" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_1" Message="[&quot;Selecting First Format Events: &quot; + in_Events_First]" TextColor="White" />
+                  <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="470,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[in_Events_First]" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Timeout="15" Version="V4">
                     <uix:NSelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="50">
                         <x:String></x:String>
@@ -358,7 +346,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NSelectItem>
-                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Select Done" DisplayName="Select Item Done" sap:VirtualizedContainerService.HintSize="504,219.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[in_config(&quot;SM-Tickets_Select_Item_Done&quot;).ToString]">
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Select Done" DisplayName="Select Item Done" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[in_config(&quot;SM-Tickets_Select_Item_Done&quot;).ToString]">
                     <ui:SelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="8">
                         <x:String>done</x:String>
@@ -387,7 +375,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:SelectItem>
-                  <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click View Reports" ClickType="Single" DisplayName="Click 'View Reports'" sap:VirtualizedContainerService.HintSize="504,256.8" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
+                  <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click View Reports" ClickType="Single" DisplayName="Click 'View Reports'" sap:VirtualizedContainerService.HintSize="470,256" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="b0967180-9299-4728-9dad-790b68ff48db" CvElementArea="606, 619, 131, 30" CvTextArea="625, 627, 92, 17" CvTextArgument="View Reports" CvType="Button" DesignTimeRectangle="608, 620, 129, 28" DesignTimeScaleFactor="0.9375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='View Reports' check:innerText='View Reports' /&gt;" Guid="84809b1c-d238-470a-a6fe-91d03927be04" InformativeScreenshot="55007c9349f43952dca3369a65254530.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -409,7 +397,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <Assign sap:VirtualizedContainerService.HintSize="504,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign sap:VirtualizedContainerService.HintSize="470,105" sap2010:WorkflowViewState.IdRef="Assign_4">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Boolean">[out_notFoundEvents]</OutArgument>
                     </Assign.To>
@@ -425,15 +413,15 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="537.6,3792.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,2294" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error Encountered on Select Events: &quot; + exception.Message]" />
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;Trying Second Format&quot;]" />
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="504,3380.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Error Encountered on Select Events: &quot; + exception.Message]" />
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;Trying Second Format&quot;]" />
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="470,1884" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -441,29 +429,15 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="502.4,1119.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="468,1115" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Selecting Second Format Events: &quot; + in_Events_Second]">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:LogMessage>
-                            <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="468.8,112.8" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_2" Message="[&quot;Selecting Second Format Events: &quot; + in_Events_First]" TextColor="White">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </usa:DisplaySubtitleActivity>
-                            <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="468.8,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[in_Events_Second]" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Timeout="15" Version="V4">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Selecting Second Format Events: &quot; + in_Events_Second]" />
+                            <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_2" Message="[&quot;Selecting Second Format Events: &quot; + in_Events_First]" TextColor="White" />
+                            <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[in_Events_Second]" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Timeout="15" Version="V4">
                               <uix:NSelectItem.Items>
                                 <scg:List x:TypeArguments="x:String" Capacity="50">
                                   <x:String></x:String>
@@ -534,7 +508,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NSelectItem>
-                            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Select Done" DisplayName="Select Item Done" sap:VirtualizedContainerService.HintSize="468.8,219.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[in_config(&quot;SM-Tickets_Select_Item_Done&quot;).ToString]">
+                            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Select Done" DisplayName="Select Item Done" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[in_config(&quot;SM-Tickets_Select_Item_Done&quot;).ToString]">
                               <ui:SelectItem.Items>
                                 <scg:List x:TypeArguments="x:String" Capacity="8">
                                   <x:String>done</x:String>
@@ -563,7 +537,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:SelectItem>
-                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click View Reports" ClickType="Single" DisplayName="Click 'View Reports'" sap:VirtualizedContainerService.HintSize="468.8,256.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click View Reports" ClickType="Single" DisplayName="Click 'View Reports'" sap:VirtualizedContainerService.HintSize="434,256" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="b0967180-9299-4728-9dad-790b68ff48db" CvElementArea="606, 619, 131, 30" CvTextArea="625, 627, 92, 17" CvTextArgument="View Reports" CvType="Button" DesignTimeRectangle="608, 620, 129, 28" DesignTimeScaleFactor="0.9375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='View Reports' check:innerText='View Reports' /&gt;" Guid="84809b1c-d238-470a-a6fe-91d03927be04" InformativeScreenshot="55007c9349f43952dca3369a65254530.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                               </uix:NClick.Target>
@@ -585,19 +559,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <Assign sap:VirtualizedContainerService.HintSize="468.8,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Boolean">[out_notFoundEvents]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
                                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                               </Assign.Value>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
                             </Assign>
                           </Sequence>
                         </TryCatch.Try>
@@ -607,252 +575,28 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="502.4,2007.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,515" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[&quot;Error Encountered on Select Events: &quot; + exception.Message]">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </ui:LogMessage>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Error" Message="[&quot;Trying Third Format&quot;]">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </ui:LogMessage>
-                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="468.8,1595.2" sap2010:WorkflowViewState.IdRef="TryCatch_3">
-                                  <TryCatch.Try>
-                                    <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="467.2,1119.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Selecting Third Format Events: &quot; + in_Events_Third]">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:LogMessage>
-                                      <usa:DisplaySubtitleActivity ContinueOnError="{x:Null}" BackgroundColor="Black" BackgroundOpacity="0.8" DisplayName="Display Subtitle" DurationMS="3000" FontSize="38" sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="DisplaySubtitleActivity_3" Message="[&quot;Selecting Third Format Events: &quot; + in_Events_Third]" TextColor="White">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </usa:DisplaySubtitleActivity>
-                                      <uix:NSelectItem DelayBefore="3" DisplayName="Select Item 'Select Specific Event'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[in_Events_Third]" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Timeout="15" Version="V4">
-                                        <uix:NSelectItem.Items>
-                                          <scg:List x:TypeArguments="x:String" Capacity="50">
-                                            <x:String></x:String>
-                                            <x:String>TABLE TENNIS 1HR</x:String>
-                                            <x:String>BILLIARD 30MINS</x:String>
-                                            <x:String>SKY RANCH TAGAYTAY 2025</x:String>
-                                            <x:String>SKY RANCH PAMPANGA 2025</x:String>
-                                            <x:String>SKY RANCH BAGUIO 2025</x:String>
-                                            <x:String>ANJO WORLD THEME PARK</x:String>
-                                            <x:String>FOREVER ENCHANTED!</x:String>
-                                            <x:String>VIVAMAX</x:String>
-                                            <x:String>SARAH GERONIMO AND BAMBOO CONCERT LIVE IN LAGUNA</x:String>
-                                            <x:String>BLACKPINK DEADLINE WORLD TOUR</x:String>
-                                            <x:String>BLACKPINK DEADLINE WORLD TOUR - NOV 23</x:String>
-                                            <x:String>JASON DERULO IN MANILA</x:String>
-                                            <x:String>JASON DERULO IN MANILA - SVIP LAYOUT</x:String>
-                                            <x:String>JASON DERULO IN MANILA - LB PREMIUM LAYOUT</x:String>
-                                            <x:String>TESTEVNT</x:String>
-                                            <x:String>BLACKPINK DEADLINE WORLD TOUR - NOV 22</x:String>
-                                            <x:String>TEST EVENT</x:String>
-                                            <x:String>JASON DERULO AFTER PARTY ONE NIGHT ONLY</x:String>
-                                            <x:String>PLAYBACK POP IT UP MUSIC FESTIVAL</x:String>
-                                            <x:String>2025 Garmin Run Asia Series - Philippines</x:String>
-                                            <x:String>ERASERHEADS ELECTRIC FUN MUSIC FESTIVAL</x:String>
-                                            <x:String>ERASERHEADS ELECTRIC FUN MUSIC FESTIVAL - PALAWAN PAY LAYOUT</x:String>
-                                            <x:String>MARIAH CAREY THE CELEBRATION OF MIMI LIVE IN MANILA 2025</x:String>
-                                            <x:String>YAKULT 33RD 10-MILER</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - MEGA FAN PASS</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - ULTRA FAN PASS</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - SUPER FAN PASS</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - FINALS PASS</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - SEMI-FINALS - SF1 OR SF2 - 6:30PM</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - SEMI-FINALS - SF1 OR SF2 - 2:30PM</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - SEMIFINALS PASS</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - QUARTER-FINALS - QF4 (D,E)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - QUARTER-FINALS - QF1 (A,H)</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - QUARTERFINALS PASS</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - QUARTER-FINALS - QF3 (C,F)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - QUARTER-FINALS - QF2 (B,G)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (H1-A2)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (A1-H2)</x:String>
-                                            <x:String>FIVB VOLLEYBALL MENS WORLD CHAMPIONSHIP - ROUND OF 16 PASS</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (E1-D2)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (D1-E2)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (F1-C2)</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (C1-F2)</x:String>
-                                            <x:String>Lufthansa Technik Philippines Aviation Run 2025</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (G1-B2)</x:String>
-                                            <x:String>TJ MONTERDE SARILI NATING MUNDO LIVE IN DIGOS CITY</x:String>
-                                            <x:String>2025 SEO IN GUK ASIA FAN MEETING TOUR IN MANILA</x:String>
-                                            <x:String>FIVB SM MALL OF ASIA ARENA - ROUND OF 16 (B1-G2)</x:String>
-                                          </scg:List>
-                                        </uix:NSelectItem.Items>
-                                        <uix:NSelectItem.Target>
-                                          <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="32e82dff-a47b-4a9d-ba72-8bf469fe2c60" DesignTimeRectangle="608, 494, 318, 20" DesignTimeScaleFactor="0.9375" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' name='event_id' parentid='wrapper' /&gt;" Guid="0e5689f9-6e0b-4126-9ebe-70762f7b155b" ImageBase64="" InformativeScreenshot="851e714a5774b4e1b7e0547a10adf9d1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Visible" WaitForReadyArgument="Complete">
-                                            <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                <uix:Target CVScreenId="32e82dff-a47b-4a9d-ba72-8bf469fe2c60" CvTextArea="415, 500, 142, 15" CvTextArgument="Select Specific Event:" CvType="Text" DesignTimeRectangle="417, 494, 188, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Select Specific Event:' tag='LABEL' type='' class='' check:innerText='Select Specific Event:' /&gt;" Guid="785a3117-61c5-4339-b65c-f42e519f9ce0" SearchSteps="FuzzySelector, CV" />
-                                              </scg:List>
-                                            </uix:TargetAnchorable.Anchors>
-                                          </uix:TargetAnchorable>
-                                        </uix:NSelectItem.Target>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </uix:NSelectItem>
-                                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" sap2010:Annotation.AnnotationText="Select Done" DisplayName="Select Item Done" sap:VirtualizedContainerService.HintSize="433.6,219.2" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="[in_config(&quot;SM-Tickets_Select_Item_Done&quot;).ToString]">
-                                        <ui:SelectItem.Items>
-                                          <scg:List x:TypeArguments="x:String" Capacity="8">
-                                            <x:String>done</x:String>
-                                            <x:String>voided</x:String>
-                                            <x:String>paid_online</x:String>
-                                            <x:String>paid</x:String>
-                                            <x:String>reserved</x:String>
-                                            <x:String>unredeemed</x:String>
-                                          </scg:List>
-                                        </ui:SelectItem.Items>
-                                        <ui:SelectItem.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="30d2a839-b4b5-4eb6-9801-264156ce7989" InformativeScreenshot="ae7d03b696b6c8774ec1780017df3044" Selector="&lt;webctrl name='status' tag='SELECT' /&gt;">
-                                            <ui:Target.TimeoutMS>
-                                              <InArgument x:TypeArguments="x:Int32" />
-                                            </ui:Target.TimeoutMS>
-                                            <ui:Target.WaitForReady>
-                                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                                            </ui:Target.WaitForReady>
-                                          </ui:Target>
-                                        </ui:SelectItem.Target>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:SelectItem>
-                                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click View Reports" ClickType="Single" DisplayName="Click 'View Reports'" sap:VirtualizedContainerService.HintSize="433.6,256.8" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="af98c089-cbfb-47f8-937d-c8a493cc39ca" Version="V4">
-                                        <uix:NClick.Target>
-                                          <uix:TargetAnchorable BrowserURL="smtickets.sm.ph/new_reports/ticket_list" CVScreenId="b0967180-9299-4728-9dad-790b68ff48db" CvElementArea="606, 619, 131, 30" CvTextArea="625, 627, 92, 17" CvTextArgument="View Reports" CvType="Button" DesignTimeRectangle="608, 620, 129, 28" DesignTimeScaleFactor="0.9375" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='View Reports' check:innerText='View Reports' /&gt;" Guid="84809b1c-d238-470a-a6fe-91d03927be04" InformativeScreenshot="55007c9349f43952dca3369a65254530.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SM Tickets - Ticket List' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                                        </uix:NClick.Target>
-                                        <uix:NClick.VerifyOptions>
-                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                            <uix:VerifyExecutionOptions.Retry>
-                                              <InArgument x:TypeArguments="x:Boolean" />
-                                            </uix:VerifyExecutionOptions.Retry>
-                                            <uix:VerifyExecutionOptions.Timeout>
-                                              <InArgument x:TypeArguments="x:Double" />
-                                            </uix:VerifyExecutionOptions.Timeout>
-                                          </uix:VerifyExecutionOptions>
-                                        </uix:NClick.VerifyOptions>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </uix:NClick>
-                                      <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_5">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:Boolean">[out_notFoundEvents]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
-                                    </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,221.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Error Encountered on Select Events: &quot; + exception.Message]">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </ui:LogMessage>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;No Events Found&quot;]">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </ui:LogMessage>
-                                          <Assign sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="Assign_2">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Boolean">[out_notFoundEvents]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                                            </Assign.Value>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </Assign>
-                                        </Sequence>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                  <TryCatch.Finally>
-                                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </Sequence>
-                                  </TryCatch.Finally>
-                                </TryCatch>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;Error Encountered on Select Events: &quot; + exception.Message]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;No Events Found&quot;]" />
+                                <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Boolean">[out_notFoundEvents]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                  </Assign.Value>
+                                </Assign>
                               </Sequence>
                             </ActivityAction>
                           </Catch>
                         </TryCatch.Catches>
                         <TryCatch.Finally>
-                          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="502.4,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -866,7 +610,7 @@
                 </Catch>
               </TryCatch.Catches>
               <TryCatch.Finally>
-                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="537.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="504,89" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -887,7 +631,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:LogMessage sap2010:Annotation.AnnotationText="Log mesage the starting of the execution" DisplayName="Log Message SM_Tickets_TicketList_Generating_Report End" sap:VirtualizedContainerService.HintSize="606.4,196.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SM_Tickets_Ticket_List_Generating_Report Ended ....&quot;]">
+    <ui:LogMessage sap2010:Annotation.AnnotationText="Log mesage the starting of the execution" DisplayName="Log Message SM_Tickets_TicketList_Generating_Report End" sap:VirtualizedContainerService.HintSize="574,195" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SM_Tickets_Ticket_List_Generating_Report Ended ....&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
